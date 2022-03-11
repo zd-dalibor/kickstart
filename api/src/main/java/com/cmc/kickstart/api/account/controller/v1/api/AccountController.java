@@ -39,7 +39,7 @@ public class AccountController {
         PagingResponse<AccountDto> response;
 
         if (bindingResult.hasErrors()) {
-            response = PagingResponse.error("Invalid data.");
+            response = PagingResponse.error("Invalid request.");
             return ResponseEntity.badRequest().body(response.setErrors(BindingResultMapper.toErrors(bindingResult)));
         }
 

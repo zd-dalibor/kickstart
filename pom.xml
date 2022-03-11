@@ -17,6 +17,9 @@
 
   <properties>
     <java.version>17</java.version>
+
+    <!-- library versions -->
+    <springdoc-openapi-ui.version>1.6.6</springdoc-openapi-ui.version>
   </properties>
 
   <dependencyManagement>
@@ -36,7 +39,7 @@
       <dependency>
         <groupId>org.springdoc</groupId>
         <artifactId>springdoc-openapi-ui</artifactId>
-        <version>1.6.6</version>
+        <version>${springdoc-openapi-ui.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
