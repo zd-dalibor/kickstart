@@ -31,7 +31,7 @@ public class AccountController {
         return ResponseEntity.notFound().build();
     }
 
-    @PostMapping("/find")
+    @PostMapping("/search")
     public ResponseEntity<PagingResponse<AccountDto>> search(
         @Validated @RequestBody AccountFindRequest findRequest,
         BindingResult bindingResult
